@@ -3,5 +3,5 @@ main = putStrLn $ show $ maximum $ filter isPalindromeInt $ [xs*ys | xs <- three
 threeDigitNumbers = [100 .. 999]
 
 isPalindromeInt :: Int -> Bool
-isPalindromeInt num = str == (reverse str)
-    where str = show num
+isPalindromeInt num = numString == (reverse numString)
+    where numString = show num
