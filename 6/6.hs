@@ -1,6 +1,6 @@
-main = putStrLn $ show $ abs $ squareOfSum - sumOfSquares
+main = putStrLn $ show $ abs $ squareOfSums - sumOfSquares
 
-squareOfSums = sqr $ foldr (+) 0 [1..100])
+squareOfSums = sqr $ foldr (+) 0 [1..100]
 sumOfSquares = foldr (+) 0 $ map sqr [1..100]
 
 sqr :: Int -> Int
